@@ -55,7 +55,6 @@ chars="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 bases=len(chars)
 for i in range(len(chars)):
     arr[chars[i-1]]=i-1
-
 print "\n\n"
 for v in helpfile:
 	print v
