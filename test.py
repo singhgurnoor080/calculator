@@ -2,6 +2,8 @@ import math
 last=None
 helpfile=[
 	"Type a standard Parenthetical statement and the calculator will tell you the answer.",
+	"The calculator rounds towards 0 to the nearest integer, so if you want an answer with decimal places,",
+	"you have to type '.0' or '.272' etc. on one or more of your values.",
 	"Type 'A' to use the last answer. Type % to find the remainder of a problem. Also use 'P' to represent Pi.\n",
 	"Note that you should ALWAYS use multiplication signs (*) in between multiplying statements or it will result in an error.",
 	"R converts a number into Radians, and D converts a number into Degrees.",
@@ -54,6 +56,7 @@ bases=len(chars)
 for i in range(len(chars)):
     arr[chars[i-1]]=i-1
 
+print "\n\n"
 for v in helpfile:
 	print v
 while True:
@@ -143,4 +146,3 @@ while True:
 		except:
 			print "There was a problem."
 			pass
-		#exec s
