@@ -11,6 +11,12 @@
 #    * Santiago
 #    * Travis
 
+Josh:
+	We need to get the following commands added:
+		-log10
+		-fact
+		-fib
+	Sorry that this throws an error, it is to get your attention
 # Raw imports
 import shlex
 import math
@@ -70,7 +76,8 @@ if __name__ == "__main__":
         "hello":"try it and see",
         "help":"shows this help dialog",
         "recall":"recalls the last answer",
-        "convert":"converts numbers between bases"
+        "convert":"converts numbers between bases",
+        "root":"finds arg1 to the arg2 root"
     }
 
     def helpfile():
@@ -143,50 +150,56 @@ if __name__ == "__main__":
 
         for _cmd in commands.keys():
             if _cmd == cmd:
-                if cmd == "sqrt":
-                    number = int(command[1])
-                    last_value = team1.sqrt(number)
-                    print(last_value)
-                elif cmd == "exit":
-                    exit(0)
-                elif cmd == "quit":
-                    exit(0)
-                elif cmd == "hello":
-                    if _hello <= 10:
-                        _hello += 1
-                        print(hellos[random.randint(0, len(hellos) - 1)])
-                    else:
-                        print(colors.FAIL + leave_us_alone[random.randint(0, len(leave_us_alone) - 1)] + colors.ENDC)
-                elif cmd == "abs":
-                    number = int(command[1])
-                    last_value = team2.abs(number)
-                    print(last_value)
-                elif cmd == "help":
-                	helpfile()
-                    #print "Commands:\n"
-                    #for helpstr in commands:
-                    #    print helpstr
-                    #print
-                elif cmd == "recall":
-                    print "Last value: %d" % last_value
-                elif cmd == "add":
-                    number1 = int(command[1])
-                    number2 = int(command[2])
-                    last_value = team6.add(number1, number2)
-                    print(last_value)
-                elif cmd == "sub":
-                    number1 = int(command[1])
-                    number2 = int(command[2])
-                    last_value = team6.sub(number1, number2)
-                    print(last_value)
-                elif cmd == "opp":
-                    number = int(command[1])
-                    last_value = team6.opp(number)
-                    print(last_value)
-                elif cmd == "pow":
-                    number1 = int(command[1])
-                    number2 = int(command[2])
-                    last_value = team3.pow(number1, number2)
-                    print(last_value)
-                elif cmd == "convert":
-                    converter.convert()
+                try:
+                    if cmd == "sqrt":
+                        number = int(command[1])
+                        last_value = team1.sqrt(number)
+                        print(last_value)
+                    elif cmd == "exit":
+                        exit(0)
+                    elif cmd == "quit":
+                        exit(0)
+                    elif cmd == "hello":
+                        if _hello <= 10:
+                            _hello += 1
+                            print(hellos[random.randint(0, len(hellos) - 1)])
+                        else:
+                            print(colors.FAIL + leave_us_alone[random.randint(0, len(leave_us_alone) - 1)] + colors.ENDC)
+                    elif cmd == "abs":
+                        number = int(command[1])
+                        last_value = team2.abs(number)
+                        print(last_value)
+                    elif cmd == "help":
+                    	helpfile()
+                        #print "Commands:\n"
+                        #for helpstr in commands:
+                        #    print helpstr
+                        #print
+                    elif cmd == "recall":
+                        print "Last value: %d" % last_value
+                    elif cmd == "add":
+                        number1 = int(command[1])
+                        number2 = int(command[2])
+                        last_value = team6.add(number1, number2)
+                        print(last_value)
+                    elif cmd == "sub":
+                        number1 = int(command[1])
+                        number2 = int(command[2])
+                        last_value = team6.sub(number1, number2)
+                        print(last_value)
+                    elif cmd == "opp":
+                        number = int(command[1])
+                        last_value = team6.opp(number)
+                        print(last_value)
+                    elif cmd == "pow":
+                        number1 = int(command[1])
+                        number2 = int(command[2])
+                        last_value = team3.pow(number1, number2)
+                        print(last_value)
+                    elif cmd == "convert":
+                        converter.convert()
+                    elif cmd == "root":
+                        last_value=team1.root(int(command[1]),int(command[2]))
+                        print(last_value)
+                except:
+                    print colors.FAIL+"Command failed!"+colors.ENDC
