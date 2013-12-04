@@ -105,6 +105,8 @@ if __name__ == "__main__":
 		"WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH"
 		"You Ares Haxor Mstr",
 		"1 4m l3373r t#4n Y00",
+		"Keep calm and stop with these stupid memes"
+
 	]
 
 	while True:
