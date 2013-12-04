@@ -40,12 +40,12 @@ def convert():
                             n=math.floor(n/baseto)
                         print colors.GREEN+s+colors.ENDC
                     except:
-                        print colors.FAIL+"Unable to convert!\n"+colors.WARNING+"Make sure not to use characters of higher value than your base!"+colors.ENDC
+                        print colors.FAIL+"Unable to convert!\n"+"Make sure not to use characters of higher value than your base!"+colors.ENDC
                 else:
-                    print colors.WARNING+"Invalid base '"+str(baseto)+"' to convert into! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
+                    print colors.FAIL+"Invalid base '"+str(baseto)+"' to convert into! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
             except:
                 print colors.FAIL+"Invalid base '"+str(baseto)+"' to convert into, use only decimal numbers!"+colors.ENDC
         else:
-            print colors.WARNING+"Invalid base '"+str(basefrom)+"' to convert from! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
+            print colors.FAIL+"Invalid base '"+str(basefrom)+"' to convert from! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
     except:
         print colors.FAIL+"Invalid base '"+str(basefrom)+"' to convert from, use only decimal numbers!"+colors.ENDC

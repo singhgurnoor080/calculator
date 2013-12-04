@@ -45,27 +45,42 @@ if __name__ == "__main__":
 
     # Defines a set of commands that
     # are used for the command interpreter
-    commands = [
-        "exit",
-        "quit"
-        "sqrt",
-        "abs",
-        "fact",
-        "pow",
-        "ln",
-        "mod",
-        "log10",
-        "divide",
-        "multiply",
-        "inverse",
-        "add",
-        "sub",
-        "opp",
-        "hello",
-        "help",
-        "recall",
-        "convert"
-    ]
+    commands = {
+        "exit":"closes the calculator",
+        "quit":"another method to close the calculator.",
+        "sqrt":"finds the square root of the given number",
+        "abs":"finds the absolute value of the given number",
+        "fact":"finds the factorial of the given number",
+        "pow":"raises argument one to the argument two power",
+
+        "ln":"finds the number '1' for now", # ln needs finishing
+
+        "mod":"unsure of", # needs finishing
+
+        "log10":"unsure of", # i don't understand how to word this
+
+        "divide":"divides argument one by argument two",
+        "multiply":"multiplies the two given numbers",
+
+        "inverse":"unsure of", # needs finishing
+
+        "add":"adds the two given numbers",
+        "sub":"subtracts argument two from argument one",
+        "opp":"switces the sign of the given number",
+        "hello":"try it and see",
+        "help":"shows this help dialog",
+        "recall":"recalls the last answer",
+        "convert":"converts numbers between bases"
+    }
+
+    def helpfile():
+        print colors.BLUE+"Commands:"
+        for i,v in commands.iteritems():
+            print "    "+i+" - "+v
+        
+        print colors.ENDC
+		
+    helpfile()
 
     # Whitty responses for the command "hello"
     hellos = [
@@ -126,7 +141,7 @@ if __name__ == "__main__":
         command = shlex.split(raw_input("> "))
         cmd = command[0]
 
-        for _cmd in commands:
+        for _cmd in commands.keys():
             if _cmd == cmd:
                 if cmd == "sqrt":
                     number = int(command[1])
@@ -147,10 +162,11 @@ if __name__ == "__main__":
                     last_value = team2.abs(number)
                     print(last_value)
                 elif cmd == "help":
-                    print "Commands:\n"
-                    for helpstr in commands:
-                        print helpstr
-                    print
+                	helpfile()
+                    #print "Commands:\n"
+                    #for helpstr in commands:
+                    #    print helpstr
+                    #print
                 elif cmd == "recall":
                     print "Last value: %d" % last_value
                 elif cmd == "add":
