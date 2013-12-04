@@ -16,30 +16,36 @@ def convert():
         basefrom=raw_input("From base:\n")
         basefrom=int(basefrom)
         if basefrom<len(chars) and basefrom>0:
-            baseto=raw_input("To base:\n")
-            baseto=int(baseto)
-            if baseto<len(chars) and baseto>0:
-                number=raw_input("Number:\n")
-                n=0
-                if not basefrom==10:
-                    for i in range(len(number)):
-                        char=arr[number[i-1]]
-                        l=len(number)
-                        ex=basefrom**(l-i-1)
-                        n=n+(char*ex)
+            try:
+                baseto=raw_input("To base:\n")
+                baseto=int(baseto)
+                if baseto<len(chars) and baseto>0:
+                    try:
+                        number=raw_input("Number:\n")
+                        n=0
+                        if not basefrom==10:
+                            for i in range(len(number)):
+                                char=arr[number[i-1]]
+                                l=len(number)
+                                ex=basefrom**(l-i-1)
+                                n=n+(char*ex)
+                        else:
+                            n=int(number)
+                        s=""
+                        while n>0:
+                            su=math.floor(n%baseto)
+                            for i,v in arr.iteritems():
+                                if v==su:
+                                    s=i+s
+                            n=math.floor(n/baseto)
+                        print colors.GREEN+s+colors.ENDC
+                    except:
+                        print colors.FAIL+"Unable to convert!\n"+colors.WARNING+"Make sure not to use characters of higher value than your base!"+colors.ENDC
                 else:
-                    n=int(number)
-                s=""
-                while n>0:
-                    su=math.floor(n%baseto)
-                    for i,v in arr.iteritems():
-                        if v==su:
-                            s=i+s
-                    n=math.floor(n/baseto)
-                print colors.GREEN+s+colors.ENDC
-            else:
-                print colors.WARNING+"Invalid base '"+str(baseto)+"' to convert into!"+colors.ENDC
+                    print colors.WARNING+"Invalid base '"+str(baseto)+"' to convert into! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
+            except:
+                print colors.FAIL+"Invalid base '"+str(baseto)+"' to convert into, use only decimal numbers!"+colors.ENDC
         else:
-            print colors.WARNING+"Invalid base '"+str(basefrom)+"' to convert from!"+colors.ENDC
+            print colors.WARNING+"Invalid base '"+str(basefrom)+"' to convert from! Bases go from 1 to 62, nothing other than that!"+colors.ENDC
     except:
-        print colors.FAIL+"There was an error during conversion!"+colors.ENDC
+        print colors.FAIL+"Invalid base '"+str(basefrom)+"' to convert from, use only decimal numbers!"+colors.ENDC
