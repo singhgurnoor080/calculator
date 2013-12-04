@@ -109,7 +109,10 @@ if __name__ == "__main__":
 		"And knowing is half the battle",
 		"The Battle is all of the battle",
 		"We COULD have a GUI . . . but we choose not to",
-
+		"The cake is a lie",
+		"The lie is a pie",
+		"The pie is a spy",
+		"Gentlemen"
 	]
 
 	while True:
