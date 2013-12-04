@@ -107,7 +107,8 @@ if __name__ == "__main__":
         "It's all ogre now",
         "And knowing is half the battle",
         "The Battle is all of the battle",
-        "We COULD have a GUI . . . but we choose not to"
+        "We COULD have a GUI . . . but we choose not to",
+        "THEY TREAT ME LIKE THE MAYOR CAUSE IM THE BIGGEST PLAYER"
     ]
 
     # Whitty responses to leave hello alone
