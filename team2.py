@@ -14,3 +14,8 @@ def factorial(n):
         return n * factorial(n-1)
 
 	
+	if x <= 0:
+		return -x
+	else:
+		return x
+

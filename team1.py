@@ -1,12 +1,10 @@
-"""
-Group 1: Team Jacob
-Members:
-	* Jared
-	* Josh
-	* Max
-	* Santiago
-	* Travis
-"""
+# Group 1: Team Jacob
+# Members:
+#	* Jared
+#	* Josh
+#	* Max
+#	* Santiago
+#	* Travis
 
 def sqrt(x):
 	"""
