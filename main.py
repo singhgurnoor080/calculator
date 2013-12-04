@@ -101,7 +101,8 @@ if __name__ == "__main__":
 		"Pirate Radio",
 		"Tau is better",
 		"WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH",
-
+		"You Ares Haxor Mstr",
+		"1 4m l3373r t#4n Y00",
 	]
 
 	while True:
