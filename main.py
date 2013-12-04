@@ -33,7 +33,9 @@ class colors:
     FAIL = '\033[91m'
     ENDC = '\033[0m'
 
-last_value = 0
+# Local variables
+last_value  = 0
+hello_times = 0
 
 if __name__ == "__main__":
 	"""
@@ -106,7 +108,6 @@ if __name__ == "__main__":
 		"You Ares Haxor Mstr",
 		"1 4m l3373r t#4n Y00",
 		"Keep calm and stop with these stupid memes"
-
 	]
 
 	while True:
@@ -122,7 +123,11 @@ if __name__ == "__main__":
 				elif cmd == "exit":
 					exit(0)
 				elif cmd == "hello":
-					print(hellos[random.randint(0, len(hellos) - 1)])
+					if hello_times <= 10:
+						hello_times += 1
+						print(hellos[random.randint(0, len(hellos) - 1)])
+					else:
+						print("STOP BOTHERING ME")
 				elif cmd == "abs":
 					number = int(command[1])
 					last_value = team2.abs(number)
