@@ -95,6 +95,13 @@ if __name__ == "__main__":
 		"Next Stop the Twilight Zone DUN NA NA du du du du du",
 		"I AM A BRAIN SPECIALIST",
 		"KAEAHS",
+		"You fail it",
+		"Why you no doctor?",
+		"FRACTALS",
+		"Pirate Radio",
+		"Tau is better",
+		"WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH",
+
 	]
 
 	while True:
