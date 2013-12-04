@@ -22,7 +22,7 @@ import random
 import team1
 import team2
 # import team3
-# import team4
+import team4
 # import team5
 import team6
 
@@ -103,6 +103,8 @@ if __name__ == "__main__":
 		"WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH"
 		"You Ares Haxor Mstr",
 		"1 4m l3373r t#4n Y00",
+		"Keep calm and stop with these stupid memes"
+
 	]
 
 	while True:
