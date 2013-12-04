@@ -108,7 +108,8 @@ if __name__ == "__main__":
         "And knowing is half the battle",
         "The Battle is all of the battle",
         "We COULD have a GUI . . . but we choose not to",
-        "THEY TREAT ME LIKE THE MAYOR CAUSE IM THE BIGGEST PLAYER"
+        "THEY TREAT ME LIKE THE MAYOR CAUSE IM THE BIGGEST PLAYER",
+        "Shrek is love. Shrek is life. Shrek is Alveyworld. All hail Shrek."
     ]
 
     # Whitty responses to leave hello alone
