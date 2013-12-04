@@ -122,3 +122,17 @@ if __name__ == "__main__":
 					print
 				elif cmd == "recall":
 					print "Last value: %d" % last_value
+				elif cmd == "add":
+					number1 = int(command[1])
+					number2 = int(command[2])
+					last_value = team6.add(number1, number2)
+					print(last_value)
+				elif cmd == "sub":
+					number1 = int(command[1])
+					number2 = int(command[2])
+					last_value = team6.sub(number1, number2)
+					print(last_value)
+				elif cmd == "opp":
+					number = int(command[1])
+					last_value = team6.opp(number)
+					print(last_value)
