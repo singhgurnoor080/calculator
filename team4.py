@@ -1,6 +1,9 @@
 #JP #Taylor #Ceasar #Dane
 
 def log10(x):
+"""
+Taking a number, giving it a base and raising it to a power is log
+"""
 	temp = x
 	count = 0
 	while temp >= 10:
@@ -15,6 +18,10 @@ def log10(x):
 # 		a, b = b, a+b
 		
 def fib(n):
+	"""
+	Taking a number, giving it a base and raising it to a power is log
+	"""
+	
 	result = []
 	a, b = 0, 1
 	while b < n:
