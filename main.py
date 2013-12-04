@@ -19,7 +19,7 @@ import random
 # Class Imports
 import team1
 import team2
-# import team3
+import team3
 import team4
 # import team5
 import team6
@@ -160,4 +160,9 @@ if __name__ == "__main__":
                 elif cmd == "opp":
                     number = int(command[1])
                     last_value = team6.opp(number)
+                    print(last_value)
+                elif cmd == "pow":
+                    number1 = int(command[1])
+                    number2 = int(command[2])
+                    last_value = team3.pow(number1, number2)
                     print(last_value)

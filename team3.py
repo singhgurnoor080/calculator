@@ -5,7 +5,6 @@ def pow(b, e):
 	total = 1
 	for i in range(e):
 		total = total * b
-	
 	return total
 	
 	
