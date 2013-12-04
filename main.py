@@ -25,6 +25,7 @@ import team2
 # import team4
 # import team5
 import team6
+import converter
 
 class colors:
     BLUE = '\033[94m'
@@ -62,7 +63,8 @@ if __name__ == "__main__":
 		"opp",
 		"hello",
 		"help",
-		"recall"
+		"recall",
+		"convert"
 	}
 
 	# Whitty responses for the command "hello"
@@ -144,3 +146,5 @@ if __name__ == "__main__":
 					number = int(command[1])
 					last_value = team6.opp(number)
 					print(last_value)
+				elif cmd == "convert":
+					converter.convert()
