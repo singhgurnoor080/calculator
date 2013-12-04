@@ -22,7 +22,7 @@ import random
 import team1
 import team2
 # import team3
-# import team4
+import team4
 # import team5
 import team6
 
@@ -62,7 +62,9 @@ if __name__ == "__main__":
 		"opp",
 		"hello",
 		"help",
-		"recall"
+		"recall",
+		"fib",
+		"fib2"
 	}
 
 	# Whitty responses for the command "hello"
@@ -144,3 +146,13 @@ if __name__ == "__main__":
 					number = int(command[1])
 					last_value = team6.opp(number)
 					print(last_value)
+				elif cmd == "log10":
+					number = int(command[1])
+					last_value = team4.log10(number)
+					print(last_value)
+				elif cmd == "fib":
+					number = int(command[1])
+					last_value = team4.fib(number)
+
+					for n in last_value:
+						print(n)

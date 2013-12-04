@@ -8,16 +8,16 @@ def log10(x):
 		count += 1
 	return count
 	
-def fib(n):
-	a, b = 0,1
-	wile b < n:
-		print b,
-		a, b = b, a+b
+# def fib(n):
+# 	a, b = 0,1
+# 	wile b < n:
+# 		print b,
+# 		a, b = b, a+b
 		
-def fib2(n):
+def fib(n):
 	result = []
-	a, b =0, 1
+	a, b = 0, 1
 	while b < n :
-		result.apprnd(b)
+		result.append(b)
 		a, b = b, a+b
 	return result
