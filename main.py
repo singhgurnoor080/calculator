@@ -1,17 +1,15 @@
-"""
-Alveyworld-dev calculator
-Period 6
-
-Shrek is love. Shrek is life. Shrek is Alveyworld. All hail Shrek.
-
-Group 1: Team Jacob
-Members:
-    * Jared
-    * Josh
-    * Max
-    * Santiago
-    * Travis
-"""
+# Alveyworld-dev calculator
+# Period 6
+#
+# Shrek is love. Shrek is life. Shrek is Alveyworld. All hail Shrek.
+#
+# Group 1: Team Jacob
+# Members:
+#    * Jared
+#    * Josh
+#    * Max
+#    * Santiago
+#    * Travis
 
 # Raw imports
 import shlex
