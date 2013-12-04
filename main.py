@@ -22,9 +22,9 @@ import random
 import team1
 import team2
 # import team3
-# import team4
+import team4
 # import team5
-# import team6
+import team6
 
 class colors:
     BLUE = '\033[94m'
@@ -33,7 +33,9 @@ class colors:
     FAIL = '\033[91m'
     ENDC = '\033[0m'
 
-last_value = 0
+# Local variables
+last_value  = 0
+hello_times = 0
 
 if __name__ == "__main__":
 	"""
@@ -62,7 +64,9 @@ if __name__ == "__main__":
 		"opp",
 		"hello",
 		"help",
-		"recall"
+		"recall",
+		"fib",
+		"fib2"
 	}
 
 	# Whitty responses for the command "hello"
@@ -75,7 +79,35 @@ if __name__ == "__main__":
 		"fight me irl n00b",
 		"1v1 me",	
 		"shrek is life.  shrek is love",
-		"the machine race rises"
+		"the machine race rises",
+		"All the way from the bowels of 4chan!",
+		"I love lamp",
+		"GLASS TUBES",
+		"Baaaaka",
+		"Half Life 3 confirmed",
+		"METAL BOXES. THEY'RE HIDING IN METAL BOXES!",
+		"Not XBOXES",
+		"Spess Marens",
+		"No Place for Hideo",
+		"CRAB BATTLE",
+		"Smitty Werbenjagermanjensen",
+		"HE'S STILL NUMBER 1",
+		"Are you feeling it now Mr.Alvey?",
+		"Injoke number 42",
+		"And now for something completely different",
+		"You are about to enter a dimension not only of sight and sound but of mind",
+		"Next Stop the Twilight Zone DUN NA NA du du du du du",
+		"I AM A BRAIN SPECIALIST",
+		"KAEAHS",
+		"You fail it",
+		"Why you no doctor?",
+		"FRACTALS",
+		"Pirate Radio",
+		"Tau is better",			# amen
+		"WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH"
+		"You Ares Haxor Mstr",
+		"1 4m l3373r t#4n Y00",
+		"Keep calm and stop with these stupid memes"
 	]
 
 	while True:
@@ -91,7 +123,11 @@ if __name__ == "__main__":
 				elif cmd == "exit":
 					exit(0)
 				elif cmd == "hello":
-					print(hellos[random.randint(0, len(hellos) - 1)])
+					if hello_times <= 10:
+						hello_times += 1
+						print(hellos[random.randint(0, len(hellos) - 1)])
+					else:
+						print("STOP BOTHERING ME")
 				elif cmd == "abs":
 					number = int(command[1])
 					last_value = team2.abs(number)
@@ -100,7 +136,30 @@ if __name__ == "__main__":
 					print "Commands:\n"
 					for helpstr in commands:
 						print helpstr
-
 					print
 				elif cmd == "recall":
 					print "Last value: %d" % last_value
+				elif cmd == "add":
+					number1 = int(command[1])
+					number2 = int(command[2])
+					last_value = team6.add(number1, number2)
+					print(last_value)
+				elif cmd == "sub":
+					number1 = int(command[1])
+					number2 = int(command[2])
+					last_value = team6.sub(number1, number2)
+					print(last_value)
+				elif cmd == "opp":
+					number = int(command[1])
+					last_value = team6.opp(number)
+					print(last_value)
+				elif cmd == "log10":
+					number = int(command[1])
+					last_value = team4.log10(number)
+					print(last_value)
+				elif cmd == "fib":
+					number = int(command[1])
+					last_value = team4.fib(number)
+
+					for n in last_value:
+						print(n)
