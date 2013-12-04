@@ -34,7 +34,7 @@ class colors:
     ENDC = '\033[0m'
 
 last_value = 0
-_hellos    = 0
+_hello     = 0
 
 if __name__ == "__main__":
     """
