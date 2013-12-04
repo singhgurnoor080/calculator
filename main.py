@@ -34,7 +34,7 @@ class colors:
     ENDC = '\033[0m'
 
 last_value = 0
-hellos     = 0
+_hellos    = 0
 
 if __name__ == "__main__":
     """
@@ -132,11 +132,11 @@ if __name__ == "__main__":
                 elif cmd == "exit":
                     exit(0)
                 elif cmd == "hello":
-                    if hellos <= 10:
-                        hellos += 1
+                    if _hello <= 10:
+                        _hello += 1
                         print(hellos[random.randint(0, len(hellos) - 1)])
                     else:
-                        print(leave_us_alone[random.randint(0, len(hellos) - 1)])
+                        print(leave_us_alone[random.randint(0, len(leave_us_alone) - 1)])
                 elif cmd == "abs":
                     number = int(command[1])
                     last_value = team2.abs(number)
