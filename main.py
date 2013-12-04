@@ -113,7 +113,11 @@ if __name__ == "__main__":
     ]
 
     # Whitty responses to leave hello alone
-    
+    leave_us_alone = [
+        "LEAVE ME ALONE",
+        "I HATE YOU",
+        "You have (3) new pokes"
+    ]
 
     while True:
         command = shlex.split(raw_input("> "))
@@ -132,7 +136,7 @@ if __name__ == "__main__":
                         hellos += 1
                         print(hellos[random.randint(0, len(hellos) - 1)])
                     else:
-                        print("LEAVE ME ALONE")
+                        print(leave_us_alone[random.randint(0, len(hellos) - 1)])
                 elif cmd == "abs":
                     number = int(command[1])
                     last_value = team2.abs(number)
