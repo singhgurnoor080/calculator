@@ -21,7 +21,7 @@ import team1
 import team2
 import team3
 import team4
-# import team5
+# import team5          # team five you're holding us back
 import team6
 
 class colors:
@@ -44,8 +44,9 @@ if __name__ == "__main__":
 
     # Defines a set of commands that
     # are used for the command interpreter
-    commands = {
+    commands = [
         "exit",
+        "quit"
         "sqrt",
         "abs",
         "fact",
@@ -62,7 +63,7 @@ if __name__ == "__main__":
         "hello",
         "help",
         "recall"
-    }
+    ]
 
     # Whitty responses for the command "hello"
     hellos = [
@@ -131,12 +132,14 @@ if __name__ == "__main__":
                     print(last_value)
                 elif cmd == "exit":
                     exit(0)
+                elif cmd == "quit":
+                    exit(0)
                 elif cmd == "hello":
                     if _hello <= 10:
                         _hello += 1
                         print(hellos[random.randint(0, len(hellos) - 1)])
                     else:
-                        print(leave_us_alone[random.randint(0, len(leave_us_alone) - 1)])
+                        print(colors.FAIL + leave_us_alone[random.randint(0, len(leave_us_alone) - 1)] + colors.ENDC)
                 elif cmd == "abs":
                     number = int(command[1])
                     last_value = team2.abs(number)
