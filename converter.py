@@ -13,15 +13,15 @@ class colors:
 
 def convert():
     try:
-        basefrom=raw_input("From base:\n")
+        basefrom=raw_input(colors.BLUE+"From base:\n"+colors.ENDC)
         basefrom=int(basefrom)
         if basefrom<len(chars) and basefrom>0:
             try:
-                baseto=raw_input("To base:\n")
+                baseto=raw_input(colors.BLUE+"To base:\n"+colors.ENDC)
                 baseto=int(baseto)
                 if baseto<len(chars) and baseto>0:
                     try:
-                        number=raw_input("Number:\n")
+                        number=raw_input(colors.BLUE+"Number:\n"+colors.ENDC)
                         n=0
                         if not basefrom==10:
                             for i in range(len(number)):
