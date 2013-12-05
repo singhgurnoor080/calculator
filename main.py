@@ -11,12 +11,14 @@
 #    * Santiago
 #    * Travis
 
+"""
 Josh:
 	We need to get the following commands added:
 		-log10
 		-fact
 		-fib
 	Sorry that this throws an error, it is to get your attention
+"""
 # Raw imports
 import shlex
 import math
