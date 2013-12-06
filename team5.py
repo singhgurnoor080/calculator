@@ -14,3 +14,11 @@ def multiply(x, y):
 		answer += x
 		y = y - 1 
 	return answer
+
+
+#Tests
+print "5 * 3 = ", multiply(5, 3)
+print "0 * 3 = ", multiply(0, 3)
+print "5 * 0 = ", multiply(5, 0)
+print "-4 * 3 = ", multiply(-4, 3)
+print "2.5 * 10 = ", multiply(2.5, 10)
