@@ -3,7 +3,7 @@
 def abs(x):
     """ this function will return the absolute value of a number """
     if (x) <= 0:
-        return (x)
+        return (-x)
     
 def factorial(n):
     """ Returns the factorial of a number """

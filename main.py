@@ -55,23 +55,16 @@ if __name__ == "__main__":
     # are used for the command interpreter
     commands = {
         "exit":"closes the calculator",
-        "quit":"another method to close the calculator.",
         "sqrt":"finds the square root of the given number",
         "abs":"finds the absolute value of the given number",
         "fact":"finds the factorial of the given number",
         "pow":"raises argument one to the argument two power",
-
         "ln":"finds the number '1' for now", # ln needs finishing
-
         "mod":"unsure of", # needs finishing
-
         "log10":"unsure of", # i don't understand how to word this
-
         "divide":"divides argument one by argument two",
         "multiply":"multiplies the two given numbers",
-
         "inverse":"unsure of", # needs finishing
-
         "add":"adds the two given numbers",
         "sub":"subtracts argument two from argument one",
         "opp":"switces the sign of the given number",
@@ -148,7 +141,11 @@ if __name__ == "__main__":
 
     while True:
         command = shlex.split(raw_input("> "))
-        cmd = command[0]
+
+        try:
+            cmd = command[0]
+        except:
+            print colors.FAIL+"Command failed!"+colors.ENDC
 
         for _cmd in commands.keys():
             if _cmd == cmd:
@@ -158,8 +155,6 @@ if __name__ == "__main__":
                         last_value = team1.sqrt(number)
                         print(last_value)
                     elif cmd == "exit":
-                        exit(0)
-                    elif cmd == "quit":
                         exit(0)
                     elif cmd == "hello":
                         if _hello <= 10:
@@ -173,10 +168,6 @@ if __name__ == "__main__":
                         print(last_value)
                     elif cmd == "help":
                     	helpfile()
-                        #print "Commands:\n"
-                        #for helpstr in commands:
-                        #    print helpstr
-                        #print
                     elif cmd == "recall":
                         print "Last value: %d" % last_value
                     elif cmd == "add":
