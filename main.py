@@ -24,7 +24,7 @@ import shlex
 import math
 import random
 
-# Class Imports
+# Class imports
 import team1
 import team2
 import team3
