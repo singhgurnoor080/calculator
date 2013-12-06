@@ -194,5 +194,10 @@ if __name__ == "__main__":
                     elif cmd == "root":
                         last_value=team1.root(int(command[1]),int(command[2]))
                         print(last_value)
+                    elif cmd == "divide":
+                        number1 = int(command[1])
+                        number2 = int(command[2])
+                        last_value = team5.div(number1, number2)
+                        print(last_value)
                 except:
                     print colors.FAIL+"Command failed!"+colors.ENDC
