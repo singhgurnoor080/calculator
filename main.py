@@ -29,7 +29,7 @@ import team1
 import team2
 import team3
 import team4
-# import team5          # team five you're holding us back
+import team5        # team five you're holding us back
 import team6
 import converter
 
