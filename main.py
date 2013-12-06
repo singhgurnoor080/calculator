@@ -189,8 +189,8 @@ if __name__ == "__main__":
                         last_value=team1.root(int(command[1]),int(command[2]))
                         print(last_value)
                     elif cmd == "divide":
-                        number1 = int(command[1])
-                        number2 = int(command[2])
+                        number1 = float(command[1])
+                        number2 = float(command[2])
                         last_value = team5.div(number1, number2)
                         print(last_value)
                 except:
