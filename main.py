@@ -84,7 +84,7 @@ if __name__ == "__main__":
 		
     helpfile()
 
-    # Whitty responses for the command "hello"
+    # Witty responses for the command "hello"
     hellos = [
         "hello, puny human",
         "my other car is siri",
@@ -132,7 +132,7 @@ if __name__ == "__main__":
         "Shrek is love. Shrek is life. Shrek is Alveyworld. All hail Shrek."
     ]
 
-    # Whitty responses to leave hello alone
+    # Witty responses to leave hello alone
     leave_us_alone = [
         "LEAVE ME ALONE",
         "I HATE YOU",
