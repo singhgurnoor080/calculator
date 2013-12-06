@@ -11,14 +11,6 @@
 #    * Santiago
 #    * Travis
 
-"""
-Josh:
-	We need to get the following commands added:
-		-log10
-		-fact
-		-fib
-	Sorry that this throws an error, it is to get your attention
-"""
 # Raw imports
 import shlex
 import math
@@ -29,10 +21,11 @@ import team1
 import team2
 import team3
 import team4
-import team5        # team five you're holding us back
+import team5                            # team five you're holding us back
 import team6
 import converter
 
+# ASCII escape colors
 class colors:
     BLUE = '\033[94m'
     GREEN = '\033[92m'
@@ -40,8 +33,9 @@ class colors:
     FAIL = '\033[91m'
     ENDC = '\033[0m'
 
+# Used for the hello command
 last_value = 0
-_hello     = 0
+_hello     = 0                         #downwithteam5
 
 if __name__ == "__main__":
     """
@@ -54,25 +48,25 @@ if __name__ == "__main__":
     # Defines a set of commands that
     # are used for the command interpreter
     commands = {
-        "exit":"closes the calculator",
-        "sqrt":"finds the square root of the given number",
-        "abs":"finds the absolute value of the given number",
-        "fact":"finds the factorial of the given number",
-        "pow":"raises argument one to the argument two power",
-        "ln":"finds the number '1' for now", # ln needs finishing
-        "mod":"unsure of", # needs finishing
-        "log10":"unsure of", # i don't understand how to word this
-        "divide":"divides argument one by argument two",
-        "multiply":"multiplies the two given numbers",
-        "inverse":"unsure of", # needs finishing
-        "add":"adds the two given numbers",
-        "sub":"subtracts argument two from argument one",
-        "opp":"switces the sign of the given number",
-        "hello":"try it and see",
-        "help":"shows this help dialog",
-        "recall":"recalls the last answer",
-        "convert":"converts numbers between bases",
-        "root":"finds arg1 to the arg2 root"
+        "exit":      "closes the calculator",
+        "sqrt":      "finds the square root of the given number",
+        "abs":       "finds the absolute value of the given number",
+        "fact":      "finds the factorial of the given number",
+        "pow":       "raises argument one to the argument two power",
+        "ln":        "finds the number '1' for now", # ln needs finishing
+        "mod":       "unsure of", # needs finishing
+        "log10":     "unsure of", # i don't understand how to word this
+        "divide":    "divides argument one by argument two",
+        "multiply":  "multiplies the two given numbers",
+        "inverse":   "unsure of", # needs finishing
+        "add":       "adds the two given numbers",
+        "sub":       "subtracts argument two from argument one",
+        "opp":       "switces the sign of the given number",
+        "hello":     "try it and see",
+        "help":      "shows this help dialog",
+        "recall":    "recalls the last answer",
+        "convert":   "converts numbers between bases",
+        "root":      "finds arg1 to the arg2 root"
     }
 
     def helpfile():
