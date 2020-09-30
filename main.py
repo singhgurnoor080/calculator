@@ -52,7 +52,7 @@ if __name__ == "__main__":
         "sqrt":      "finds the square root of the given number",
         "abs":       "finds the absolute value of the given number",
         "fact":      "finds the factorial of the given number",
-        "pow":       "raises argument one to the argument two power",
+        "pow":       "raises the argument one to the argument two power",
         "ln":        "finds the number '1' for now", # ln needs finishing
         "mod":       "unsure of", # needs finishing
         "log10":     "unsure of", # i don't understand how to word this
